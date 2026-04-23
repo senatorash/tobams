@@ -45,6 +45,8 @@ npm run start
 
 ## Design Decisions
 
+- **Design System & Theming** - A centralised design was implemented using CSS variables to ensure consistency and easy theme management across the application. It defines the base color tokens in :root, which are then mapped into Tailwind using @theme inline for seamless utility based styling.
+
 - **DRY Principle (Don't Repeat Yourself)** - A core approach in programming which was implemented throughout the codebase. Rather than hardcoding each navigation item individually , all nav links, lists are defined in an array and rendered by mapping over it. This means adding, removing, or updating a nav link only requires a change in one place which is the array and it automatically reflects across both desktop nav row and the mobile menu, keeping the code clean, maintainable and free of duplications.
 
 - **Next.js(App Router)** - Required as part of the assessment stack. The App Router was used for modern file-based routing and server components support.
