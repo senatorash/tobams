@@ -176,20 +176,22 @@ const Footer = () => {
             Copyright &copy; {new Date().getFullYear()} Tobams Group. All rights
             reserved.
           </p>
-          <div className="grid grid-cols-2 lg:grid-cols-3 md:grid-cols-3 gap-3 mx-auto order-1 lg:order-2">
-            <Link href="/" className="order-3 lg:order-1">
-              <button className="font-light text-base decoration-1 underline cursor-pointer">
+          <div className="md:flex order-1 lg:order-2">
+            <div className="flex md:order-2 md:grid-cols-3 gap-3">
+              <Link href="/" className="order-1 lg:order-2 md:mx-auto ">
+                <button className="font-light text-base decoration-1 underline cursor-pointer ">
+                  Privacy Policy
+                </button>
+              </Link>
+              <Link href="/" className="order-2 lg:order-3">
+                <button className="font-light text-base decoration-1 underline cursor-pointer ">
+                  Cookies Policy
+                </button>
+              </Link>
+            </div>
+            <Link href="/" className="order-3 lg:order-1 ml-10 lg:ml-0 md:mx-5">
+              <button className="font-light text-base decoration-0 underline cursor-pointer ">
                 Terms and Condition
-              </button>
-            </Link>
-            <Link href="/" className="order-1 lg:order-2">
-              <button className="font-light text-base decoration-1 underline cursor-pointer ">
-                Privacy Policy
-              </button>
-            </Link>
-            <Link href="/" className="order-2 lg:order-3">
-              <button className="font-light text-base decoration-1 underline cursor-pointer ">
-                Cookies Policy
               </button>
             </Link>
           </div>
